@@ -15,10 +15,15 @@
 
 <body>
 
-<nav class="navbar navbar-dark bg-inverse">
-  <%= link_to 'CableChat', root_path, class: 'navbar-brand' %>
 
-  <% if user_signed_in? %>
+
+<div class="brand">Rails 5 ActionCable Chat</div>
+    <div class="address-bar">Desarrollado con Cloud9 IDE | Desplegado sobre Heroku</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+    <%= link_to 'CableChat', root_path, class: 'navbar-brand' %>
+    <% if user_signed_in? %>
     <ul class="nav navbar-nav pull-xs-right">
       <li class="nav-item">
         <span class="text-muted">Logged in as <strong><%= current_user.name %></strong></span>
@@ -28,13 +33,6 @@
       </li>
     </ul>
   <% end %>
-</nav>
-
-<div class="brand">Rails 5 ActionCable Chat</div>
-    <div class="address-bar">Desarrollado con Cloud9 IDE | Desplegado sobre Heroku</div>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
