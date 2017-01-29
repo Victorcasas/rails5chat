@@ -23,7 +23,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
-    <%= link_to 'CableChat', root_path, class: 'navbar-brand' %>
+    
     <% if user_signed_in? %>
     <ul class="nav navbar-nav pull-xs-right">
       <li class="nav-item">
@@ -50,7 +50,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.html">Principal</a>
+                        <%= link_to 'Principal', root_path%>
                     </li>
                     <li>
                         <a href="about.html">Acerca de</a>
