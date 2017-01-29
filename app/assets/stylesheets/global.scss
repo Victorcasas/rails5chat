@@ -12,6 +12,7 @@ h1 {
 #messages {
   max-height: 450px;
   overflow-y: auto;
+  overflow-x: hidden;
   .avatar {
     margin: 0.5rem;
   }
