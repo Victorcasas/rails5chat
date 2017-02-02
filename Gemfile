@@ -22,6 +22,8 @@ gem 'redis', '~> 3.2'
 
 gem 'devise'
 
+gem 'high_voltage'
+
 group :development do
   gem 'sqlite3'
   gem 'pry-rails'
