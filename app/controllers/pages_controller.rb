@@ -1,6 +1,3 @@
-class PagesController < ActionController::Base
-  protect_from_forgery with: :exception
-  include HighVoltage::StaticPage
-  
-  layout 'pages'
+class PagesController < HighVoltage::PagesController
+    skip_filter :authenticate_user
 end
