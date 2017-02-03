@@ -1,4 +1,4 @@
 class PagesController < ApplicationController
   include HighVoltage::StaticPage 
-  skip_before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:new, :create, :show, :index]
 end
