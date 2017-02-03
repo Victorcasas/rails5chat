@@ -12,7 +12,8 @@ class ApplicationController < ActionController::Base
   	if (request.path != "/blog")
   	  return true
   	else
-  	   return false
+  	  return false
+    end
   end
   
 
