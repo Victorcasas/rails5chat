@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
   include HighVoltage::StaticPage 
-  skip_before_action :authenticate_user!
-  layout 'pages'
+  skip_before_action :authenticate_user!, raise: false
+  
 end
