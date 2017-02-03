@@ -6,6 +6,12 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery with: :exception
 
-  before_action :authenticate_user!, except: [:blog]
+  before_action :authorize_special
+
+  def authorize_special
+    unless request.path == "/blog"
+      :authenticate_user!
+    end
+end
 
 end
