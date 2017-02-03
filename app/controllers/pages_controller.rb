@@ -1,5 +1,5 @@
 class PagesController < HighVoltage::PagesController  
   
-  skip_filter :authenticate_user!
+  skip_before_action :authenticate_user!
 
 end
