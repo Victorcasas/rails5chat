@@ -9,8 +9,10 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!, :unless => :hvoltage?
 
   def hvoltage?
-  	if (request.path != "/blog") return true
-  	else return false
+  	if (request.path != "/blog")
+  	  return true
+  	else
+  	   return false
   end
   
 
