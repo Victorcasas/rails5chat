@@ -20,8 +20,6 @@ gem 'devise'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'high_voltage'
 
-gem 'paperclip-dropbox'
-
 group :development do
   gem 'sqlite3'
   gem 'pry-rails'
