@@ -6,15 +6,10 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery with: :exception
 
-  before_action :authenticate_user!, :if => :nohvoltage?
+  before_action :authenticate_user!, :unless => :hvoltage?
 
-  def nohvoltage?
-  	if (request.path != "/blog")
-  	  return true
-  	else
-  	  return false
-    end
-  end
-  
+  def hvoltage?
+  	request.path == "/blog"
+  end  
 
 end
