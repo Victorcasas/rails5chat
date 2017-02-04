@@ -6,10 +6,9 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery with: :exception
 
-  before_action :authenticate_user!, :unless => :hvoltage?
+  before_action :authenticate_user!, :unless => :hvolt_page?
 
-  def hvoltage?
-  	request.path == "/blog"
+  def hvolt_page?
   	%w(/blog /contact /about).include?(request.path)
   end  
 
