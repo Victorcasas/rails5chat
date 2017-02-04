@@ -52,6 +52,21 @@
                     <li>
                         <%= link_to 'Contacto', page_path('contact') %>
                     </li>
+                       <% if user_signed_in? %>
+ <!--     
+                  <li>
+                    <span class="text-muted">Logged in as <strong><%= current_user.name %></strong></span>
+                  </li>
+-->               
+      <li class="active">
+        <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
+      </li>
+
+      <% else %>
+          <li class="active">
+            <%= link_to 'Log in' %>
+          </li>            
+      <% end %>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
