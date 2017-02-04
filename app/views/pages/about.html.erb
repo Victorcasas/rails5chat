@@ -44,13 +44,13 @@
                         <%= link_to 'Principal', root_path%>
                     </li>
                     <li>
-                        <a href="about">Acerca de</a>
+                        <%= link_to 'Acerca de', page_path('about') %>
                     </li>
                     <li>
-                        <a href="blog">Blog</a>
+                        <%= link_to 'Blog', page_path('about') %>
                     </li>
                     <li>
-                        <a href="contact">Contacto</a>
+                        <%= link_to 'Contacto', page_path('about') %>
                     </li>
                 </ul>
             </div>
@@ -71,7 +71,7 @@
                     <hr>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-responsive img-border-left" src="img/slide-2.jpg" alt="">
+                    <%= image_tag("slide-2.jpg", class: "img-responsive img-border-left") %>
                 </div>
                 <div class="col-md-6">
                     <p>Una de las novedades de Rails 5 es la solución oficial para integrar WebSockets con Rails, llamada ActionCable.</p>
