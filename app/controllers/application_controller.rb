@@ -10,6 +10,7 @@ class ApplicationController < ActionController::Base
 
   def hvoltage?
   	request.path == "/blog"
+  	%w(/blog /contact /about).include?(request.path)
   end  
 
 end
