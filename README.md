@@ -1,6 +1,6 @@
-# Project Title
+# victorcasas-rails5chat
 
-One Paragraph of project description goes here
+Chat App with Rails 5 ActionCable, Devise and Bootstrap (http://victorcasas-rails5chat.herokuapp.com) by Víctor Casas San Miguel.
 
 ## Getting Started
 
