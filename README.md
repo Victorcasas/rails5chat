@@ -1,4 +1,4 @@
-# victorcasas-rails5chat
+# Rails5chat
 
 Chat App with Rails 5 ActionCable, Devise and Bootstrap (http://victorcasas-rails5chat.herokuapp.com) by Víctor Casas San Miguel.
 
