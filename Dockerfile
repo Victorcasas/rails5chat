@@ -9,6 +9,8 @@ WORKDIR /myapp
 
 # Add the Gemfile and Gemfile.lock to the image
 COPY Gemfile /myapp/Gemfile
+# Actualizar dependencias
+RUN bundle update
 COPY Gemfile.lock /myapp/Gemfile.lock
 
 # Install gems
