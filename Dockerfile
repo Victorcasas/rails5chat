@@ -1,5 +1,5 @@
 # Start from the official Ruby image
-FROM ruby:3.0.3
+FROM ruby:2.4.1
 
 # Install Node.js and Yarn (needed for Rails asset compilation)
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client yarn
@@ -14,7 +14,7 @@ RUN bundle update
 COPY Gemfile.lock /myapp/Gemfile.lock
 
 # Install gems
-RUN gem install bundler:1.13.7
+# RUN gem install bundler:1.13.7
 RUN bundle install
 
 # Copy the rest of the application into the image
