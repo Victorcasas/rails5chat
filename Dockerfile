@@ -12,6 +12,7 @@ COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
 
 # Install gems
+RUN gem install bundler:1.13.7
 RUN bundle install
 
 # Copy the rest of the application into the image
