@@ -3,7 +3,8 @@ source :rubygems
 gem 'rails', '~> 5.0.0'
 
 # heroku fix
-# gem 'webpacker', '~>3.0'
+# 
+gem 'webpacker', '~>3.0'
 gem 'psych', '< 4'
 
 
