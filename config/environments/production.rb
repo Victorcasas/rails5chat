@@ -90,5 +90,5 @@ Rails.application.configure do
   config.action_cable.allowed_request_origins = ['https://rails5chat-58994a2d378a.herokuapp.com',
                                                  'https://rails5chat-58994a2d378a.herokuapp.com']
 
-  config.action_cable.url = "wss:/rails5chat-58994a2d378a.herokuapp.com/cable"
+  config.action_cable.url = "wss://rails5chat-58994a2d378a.herokuapp.com/cable"
 end
