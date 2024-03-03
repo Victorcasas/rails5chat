@@ -1,5 +1,5 @@
 # Start from the official Ruby image
-FROM ruby:2.4.1
+FROM ruby:2.4.10
 
 # Install Node.js and Yarn (needed for Rails asset compilation)
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client yarn
